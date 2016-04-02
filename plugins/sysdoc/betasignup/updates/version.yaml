@@ -1,0 +1,6 @@
+1.0.1: First version of BetaSignup
+1.0.2:
+  - Created Signups Table
+  - create_signups_table.php
+1.0.3:
+  -create_signups_table.php

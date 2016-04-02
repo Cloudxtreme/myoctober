@@ -1,0 +1,38 @@
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ this.page.title }}</title>
+        <meta name="author" content="October CMS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% styles %}
+        <link href="{{ [ 'assets/css/foundation.min.css', 'assets/css/app.css','assets/css/fonts.css' ]|theme }}" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+    </head>
+    <body class="page-{{ this.page.id }} layout-{{ this.layout.id }}">
+        <!-- Header -->
+        <header id="layout-header" class="header-navbar">
+          <div class="top-bar" id="main-menu">
+            <div class="top-bar-left">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li><a class="brand" href="/">Sysdoc</a></li>
+                <li>
+                  <a href="/learn-more">Learn More</a>
+                </li>
+                <li><a href="/blog">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        {% page %}
+        <!-- Scripts -->
+        <script src="{{ [
+          '@jquery',
+          'assets/js/foundation.min.js',
+          'assets/js/app.js',
+          'assets/js/vendor/what-input.min.js']|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+        {% partial "footer" %}
+    </body>
+</html>

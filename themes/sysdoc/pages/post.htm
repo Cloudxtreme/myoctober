@@ -1,0 +1,27 @@
+title = "Post"
+url = "/blog/:slug?"
+layout = "default"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog"
+==
+<div class="Page-alignment">
+  <aside class="Sidebar">
+    <div class="Sidebar-wrap">
+      <div class="text-center">
+        <div class="avatar">
+            <img src="{{ post.user.avatar.path }}">
+        </div>
+        {{ post.user.first_name }}
+        {{ post.user.last_name }} <br>
+        CoFounder of Sysdoc <br>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </aside>
+  <div class="content-wrap">
+    {% component 'blogPost' %}
+  </div>
+</div>

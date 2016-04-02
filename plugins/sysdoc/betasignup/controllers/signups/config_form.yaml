@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Signup
+
+# Model Form Field configuration
+form: $/sysdoc/betasignup/models/signup/fields.yaml
+
+# Model Class name
+modelClass: Sysdoc\BetaSignup\Models\Signup
+
+# Default redirect location
+defaultRedirect: sysdoc/betasignup/signups
+
+# Create page
+create:
+    title: Create Signup
+    redirect: sysdoc/betasignup/signups/update/:id
+    redirectClose: sysdoc/betasignup/signups
+
+# Update page
+update:
+    title: Edit Signup
+    redirect: sysdoc/betasignup/signups
+    redirectClose: sysdoc/betasignup/signups
+
+# Preview page
+preview:
+    title: Preview Signup

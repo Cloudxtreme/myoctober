@@ -1,0 +1,32 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        hidden: true
+    Name:
+        label: Name
+    Email:
+        label: Email
+    CompanySize:
+        label: Company size
+        type: dropdown
+        options:
+            1-10: 1-10
+            11-20: 11-20
+            21-50: 21-50
+            50+: 50+
+    Status:
+        label: Status
+        type: dropdown
+        options:
+            requested-invite: Requested Invite
+            contacted: Contacted
+            invited: Invited
+            onboarded: Onboarded
+    note:
+        label: Note
+        type: textarea
+        size: large

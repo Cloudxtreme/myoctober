@@ -1,0 +1,23 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    Name:
+        label: Name
+        searchable: true
+    Email:
+        label: Email
+        searchable: true
+    CompanySize:
+        label: Company size
+        searchable: true
+    Status:
+        label: Status
+        searchable: true
+    note:
+        label: Note
+        searchable: true
